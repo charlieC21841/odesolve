@@ -1,3 +1,4 @@
+
 # odesolve.py
 #
 # Author: <insert name>
@@ -134,22 +135,26 @@ def odesolve(f, X0, t, hmax, method=euler):
         true_x_values.append(x_values)
         
     
-    return true_x_values
+    #return true_x_values
     
     x = t
     # corresponding y axis values
     y = true_x_values
-  
+    
     # plotting the points
+   
     plt.plot(x, y)
   
     # naming the x axis
-    plt.xlabel('x - axis')
+    plt.xlabel('t values')
     # naming the y axis
-    plt.ylabel('y - axis')
+    plt.ylabel('x values')
   
     # giving a title to my graph
     plt.title("odesolve")
   
     plt.show()
+    
+    return true_x_values
     pass
+
